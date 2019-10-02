@@ -1,4 +1,6 @@
-World world; //<>//
+// Version code Ninja pour les travaux //<>//
+
+World world;
 
 long previousTime = 0;
 long currentTime = 0;
@@ -13,11 +15,12 @@ void setup () {
 void draw() {
   currentTime = millis();
   deltaTime = currentTime - previousTime;
+  previousTime = currentTime; 
   
   world.update(deltaTime);
   world.display();
 
-  previousTime = currentTime; 
+  
 }
 
 void keyPressed() {

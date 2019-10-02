@@ -95,7 +95,7 @@ class World {
   
   void showThanks() {
     fill(50);
-    text ("Merci à Jimmy Béland-Bédard pour le PacMan", width - 275, height - 15);
+    text ("Devoir Pacman vs Boids", width - 275, height - 15);
   }
   
   void showData() {
